@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
 #hero{
     background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url('/images/blog-01.jpg'); 
     background-repeat: no-repeat;

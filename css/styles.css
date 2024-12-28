@@ -671,8 +671,8 @@ html {
   right: 50%;
 }
 
-.top-\[25\%\] {
-  top: 25%;
+.top-\[18\%\] {
+  top: 18%;
 }
 
 .isolate {
@@ -864,36 +864,8 @@ html {
   height: 2.25rem;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[50\%\] {
-  height: 50%;
-}
-
-.h-\[20\%\] {
-  height: 20%;
-}
-
-.h-\[100\%\] {
-  height: 100%;
-}
-
-.h-\[60\%\] {
-  height: 60%;
-}
-
-.h-\[55\%\] {
-  height: 55%;
-}
-
-.h-\[\%\] {
-  height: %;
+.h-\[70\%\] {
+  height: 70%;
 }
 
 .w-\[1px\] {

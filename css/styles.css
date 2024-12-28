@@ -868,12 +868,32 @@ html {
   height: 100vh;
 }
 
-.h-96 {
-  height: 24rem;
+.h-\[\] {
+  height: ;
 }
 
-.h-full {
+.h-\[50\%\] {
+  height: 50%;
+}
+
+.h-\[20\%\] {
+  height: 20%;
+}
+
+.h-\[100\%\] {
   height: 100%;
+}
+
+.h-\[60\%\] {
+  height: 60%;
+}
+
+.h-\[55\%\] {
+  height: 55%;
+}
+
+.h-\[\%\] {
+  height: %;
 }
 
 .w-\[1px\] {

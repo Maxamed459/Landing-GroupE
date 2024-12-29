@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="bg-white p-5">
+    <header class="bg-white p-5 sticky shadow-sm shadow-gray-500 top-0 z-40">
         <nav class="flex items-center justify-between">
             <div class="logo">
                 <img src="/images/logo-dark.png" alt="website logo">
@@ -20,8 +20,8 @@
                 <ul class="hidden md:flex space-x-9">
                     <li><a class=" hover:text-[#3F8EFC]"  href="#hero">Home</a></li>
                     <li><a class=" hover:text-[#3F8EFC]" href="#features">Features</a></li>
-                    <li><a class=" hover:text-[#3F8EFC]" href="#">About</a></li>
-                    <li><a class=" hover:text-[#3F8EFC]" href="#">Client</a></li>
+                    <li><a class=" hover:text-[#3F8EFC]" href="#about">About</a></li>
+                    <li><a class=" hover:text-[#3F8EFC]" href="#client">Client</a></li>
                     <li><a class=" hover:text-[#3F8EFC]" href="#">Pricing</a></li>
                 </ul>
                 <svg class="h-9 w-auto flex md:hidden" width="100%" height="100%" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
@@ -89,8 +89,8 @@
         </div> 
      </section>
      <!-- how it works section -->
-      <section id="how">
-        <div class="bg-slate-100 mt-16 mb-32 relative">
+      <section id="about">
+        <div class="bg-slate-100 mt-16 relative">
             <div class="text-center space-y-3 mb-5 pt-20">
                 <h5 class="text-2xl">How It Works?</h5>
                 <p class="text-sm text-[#9DA9BB] max-w-sm mx-auto">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
@@ -130,11 +130,36 @@
                 </div>
             </div>
         </div>
-      </section id="present">
-     <!-- presenting section -->
-      <div>
-        MMc
-      </div>
+      </section>
+     <!-- What your client says section -->
+      <section id="client">
+        <div class="container max-w-6xl mx-auto py-20">
+            <div class="text-center space-y-7 mb-5">
+                <h5 class="text-xl md:text-3xl">What your client says</h5>
+                <p class="text-sm text-[#9DA9BB] max-w-sm md:max-w-2xl mx-auto">The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious pulvinar metus molestie sed Semikoli.</p>
+            </div>
+            <div class="flex flex-col justify-between items-center mt-9 max-w-5xl mx-auto">
+                <div class="mb-3">
+                    <img src="/images/me.jpg" class="rounded-full h-24 w-auto" alt="">
+                </div>
+                <h3 class="text-xl">Maxamed Mahdi</h3>
+                <p class="text-sm text-[#9DA9BB] max-w-sm mx-auto">Mogadishu</p>
+                <p class="text-sm text-[#9DA9BB] max-w-sm md:max-w-2xl text-center mx-auto mt-6">"Very well thought out and articulate communication. Clear milestones, deadlines and fast work. Patience. Infinite patience. No shortcuts. Even if the client is being careless. The best part...always solving problems with great original ideas!. "</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row space-y-10 md:space-y-0 items-center max-w-5xl mx-auto mt-10">
+                <div class="max-w-xl mx-auto opacity-50 hover:opacity-100 duration-500"><img class="h-20 w-auto" src="/images/01.png" alt=""></div>
+                <div class="max-w-xl mx-auto opacity-50 hover:opacity-100 duration-500"><img class="h-20 w-auto" src="/images/02.png" alt=""></div>
+                <div class="max-w-xl mx-auto opacity-50 hover:opacity-100 duration-500"><img class="h-20 w-auto" src="/images/03.png" alt=""></div>
+                <div class="max-w-xl mx-auto opacity-50 hover:opacity-100 duration-500"><img class="h-20 w-auto" src="/images/04.png" alt=""></div>
+                <div class="max-w-xl mx-auto opacity-50 hover:opacity-100 duration-500"><img class="h-20 w-auto" src="/images/05.png" alt=""></div>
+            </div>
+        </div>
+      </section>
+      <!-- pricing section -->
+       <section>
+        
+       </section>
 
 </body>
 </html>

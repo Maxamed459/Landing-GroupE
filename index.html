@@ -5,14 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing GroupE</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/687c8aeb98.js" crossorigin="anonymous"></script>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="bg-white p-5 sticky shadow-sm shadow-gray-500 top-0 z-40">
-        <nav class="flex items-center justify-between">
+    <!-- <header class="bg-white p-5 sticky shadow-sm shadow-gray-500 top-0 z-40"> -->
+      <nav class="p-3 flex justify-between bg-white items-center">
+        <a href="#" id="brand" class="flex items-center gap-2">
+            <img src="./images/logo-dark.png" alt="logo">
+        </a>
+        <div id="navbar" class="gap-6 hidden lg:flex">
+            <a class="hover:text-primary font-poppins font-medium" href="#hero">Home</a>
+            <a class="hover:text-primary font-poppins font-medium" href="#features">Features</a>
+            <a class="hover:text-primary font-poppins font-medium" href="#about">About</a>
+            <a class="hover:text-primary font-poppins font-medium" href="#client">Client</a>
+            <a class="hover:text-primary font-poppins font-medium" href="#price">Pricing</a>
+            <a class="hover:text-primary font-poppins font-medium" href="#contact">Contact Us</a>
+        </div>
+        <button class="hidden lg:flex items-center gap-2 border border-gray-300 hover:border-gray-500 px-6 py-2 rounded-lg">
+            <img src="./images/asset 1.svg" alt="">
+            <span>Discover More</span>
+            <i class="fa-solid fa-arrow-right text-gray-600"></i>
+        </button>
+
+        <button id="nav_handler" onclick="navHandler()" class="lg:hidden">
+            <i class="fa-solid fa-bars text-gray-600 text-3xl"></i>
+        </button>
+        <div id="navDiolog" class="hidden fixed z-10 lg:hidden inset-0 p-3 bg-white">
+            <div id="nav-bar" class="flex justify-between items-center ">
+                <a href="#" id="brand" class="flex items-center gap-2">
+                    <img src="./images/logo-dark.png" alt="logo">
+                </a>
+                <button id="nav_handler" onclick="navHandler()" class="lg:hidden">
+                    <i class="fa-solid fa-xmark text-gray-600 text-3xl"></i>
+                </button>
+                
+            </div>
+            <div class="mt-6">
+                <a onclick="menu_item()" class="block font-medium p-3 mt-3 hover:bg-gray-50 rounded-lg" href="#hero">Home</a>
+                <a onclick="menu_item()" class="block font-medium p-3 mt-3 hover:bg-gray-50 rounded-lg" href="#features">Features</a>
+                <a onclick="menu_item()" class="block font-medium p-3 mt-3 hover:bg-gray-50 rounded-lg" href="#about">About</a>
+                <a onclick="menu_item()" class="block font-medium p-3 mt-3 hover:bg-gray-50 rounded-lg" href="#client">Client</a>
+                <a onclick="menu_item()" class="block font-medium p-3 mt-3 hover:bg-gray-50 rounded-lg" href="#price">Pricing</a>
+                <a onclick="menu_item()" class="block font-medium p-3 mt-3 hover:bg-gray-50 rounded-lg" href="#contact">Contact Us</a>
+            </div>
+            <div class="h-[1px] bg-gray-300"></div>
+            <button class="w-full flex mt-6 items-center gap-2  hover:bg-gray-50 px-6 py-2 rounded-lg">
+                <img src="./images/asset 1.svg" alt="">
+                <span>Discover More</span>
+            </button>
+        </div>
+    </nav>
+
+        <!-- <nav class="flex items-center justify-between">
             <div class="logo">
                 <img src="/images/logo-dark.png" alt="website logo">
             </div>
@@ -32,8 +81,8 @@
                 </svg>
                 
             </div>
-        </nav>
-    </header>
+        </nav> -->
+    <!-- </header> -->
     <!-- hero section -->
     <section id="hero">
         <div class="max-w-6xl mx-auto text-center pt-40 pb-20 space-y-8">
@@ -420,4 +469,5 @@
         </div>
        </footer>
 </body>
+<script src="./main.js"></script>
 </html>
